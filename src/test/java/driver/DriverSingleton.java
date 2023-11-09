@@ -14,7 +14,7 @@ public class DriverSingleton {
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             desiredCapabilities.setCapability(CapabilityType.PLATFORM_NAME, "Android");
             desiredCapabilities.setCapability("platformVersion", "11.0");
-            desiredCapabilities.setCapability("deviceName", "Pixel 6 IDE");
+            desiredCapabilities.setCapability("deviceName", "Pixel 6");
             desiredCapabilities.setCapability("automation", "UiAutomator2");
             URL appiumServer = new URL("http://127.0.0.1:4723/wd/hub");
             appiumDriver = new AppiumDriver(appiumServer, desiredCapabilities);
