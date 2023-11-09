@@ -9,7 +9,6 @@ import java.time.Duration;
 
 public class DriverSingleton {
     private static AppiumDriver appiumDriver;
-
     public static AppiumDriver getDriver() throws MalformedURLException {
         if (appiumDriver == null) {
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
