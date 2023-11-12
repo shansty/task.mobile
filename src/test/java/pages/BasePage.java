@@ -2,10 +2,11 @@ package pages;
 
 import driver.DriverSingleton;
 import io.appium.java_client.AppiumDriver;
-import java.net.MalformedURLException;
+import java.io.IOException;
 
 public class BasePage {
-    public AppiumDriver appiumDriver = DriverSingleton.getDriver();
-    public BasePage() throws MalformedURLException {
+    public AppiumDriver appiumDriver;
+    public BasePage() throws IOException {
+        appiumDriver = DriverSingleton.getDriver();
     }
 }

@@ -9,14 +9,17 @@ import org.junit.jupiter.api.BeforeEach;
 
 public class BaseTest {
     static Logger logger;
+
     @BeforeAll
     public static void setUpLogger() {
         logger = LogManager.getLogger("logger");
     }
+
     @BeforeEach
     public void warmUp() {
         logger.info("Test started");
     }
+
     @AfterEach
     public void tearsDown() {
         logger.info("Test ended");
